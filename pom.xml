@@ -57,7 +57,7 @@
 			 <plugin>
            			 <groupId>org.apache.maven.plugins</groupId>
             			<artifactId>maven-compiler-plugin</artifactId>
-				  <version>3.11</version> <!-- Use the correct version of the plugin -->
+				  <version>3.8.1</version> <!-- Use the correct version of the plugin -->
             <configuration>
                 <source>your-java-version</source>
                 <target>your-java-version</target>
