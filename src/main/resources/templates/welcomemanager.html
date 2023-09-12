@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Page</title>
+    
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css}">
+ <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 40px;
+            padding: 40px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 100px;
+            padding: 90px;
+         	margin:90px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            border: 2px solid #007bff; 
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-left: 20%;
+           
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .btn img {
+            max-width: 80px; 
+            margin-right: 80px; 
+        }
+		.container mt-5{
+			width:50px;
+			height:50px;
+		}
+		 .image-link img {
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover; 
+        }
+         .image-link {
+            margin-right: 20px; 
+        }
+         .header,.footer{
+			background-color: blue;
+			text-align: center;
+			height: 50px;
+		}
+
+    </style>
+</head>
+<body>
+	<div class="header">
+    <h1>Pizza Shop</h1>
+</div>
+
+<div class="container mt-5">
+	<h1>Select your Choice</h1>
+ <a href="http://localhost:4200/pizzas" class="image-link" >
+	<img th:src="@{/images/pizzaImage.jpeg}" alt="Pizza">
+</a>
+
+ <a href="http://localhost:4200/sides" class="image-link">
+ <img th:src="@{/images/sides.jpeg}" alt="Side">
+  </a>
+ <a href="http://localhost:4200/drinks" class="image-link">
+   <img th:src="@{/images/drinks.jpeg}" alt="Drink">
+  </a>
+</div>
+<div class="footer">
+    <p>&copy; . All rights reserved.</p>
+</div>
+
+
+</body>
+</html>
